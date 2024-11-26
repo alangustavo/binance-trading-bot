@@ -45,3 +45,8 @@ export interface ISymbolTradingRules {
     minNotional: string;
     allowedOrderTypes: OrderType[];
 }
+
+
+export interface IExchangeInfoProvider {
+    fetchExchangeInformation(): Promise<any>;
+}
